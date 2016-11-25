@@ -1,0 +1,99 @@
+<html>
+<head>
+<script type="text/javascript">
+function reg(form)
+{
+var fnm=form.fnam.value;
+var lnm=form.lnam.value;
+var eid=form.mail.value;
+var a=form.addr.value;
+var cno=form.cnot.value;
+var dn=form.dna.value;
+var dep=form.dept.value;
+var gen=form.gender.value;
+var tc;
+if (form.tnc.checked)
+{
+tc=1;
+}
+else
+{
+tc=0;
+}
+
+if (fnm==null || fnm=="")
+{
+alert("Please provide First Name");
+self.location.href = "form2.html";
+}
+else if (lnm==null || lnm=="")
+{
+alert("Please provide Last name");
+self.location.href = "form2.html";
+}
+
+
+else if (eid==null || eid=="")
+{
+alert("Please provide E-Mail ID");
+self.location.href = "form2.html";
+}
+else if (a==null || a=="")
+{
+alert("Please provide valid address");
+self.location.href = ""form2.html";
+}
+else if (cno==null || cno=="")
+{
+alert("Please provide valid phone no");
+self.location.href = ""form2.html";
+}
+else if (dn==null || dn=="")
+{
+alert("Please provide doctor's name");
+self.location.href = ""form2.html";
+}
+else if (dep==null || dep=="")
+{
+alert("Please provide department");
+self.location.href = ""form2.html";
+}
+else
+{
+self.location.href = "submit.html";
+}
+}
+</script>
+</head>
+<body background="">
+<font face="Lucida Sans" size="10" color="blue">
+<center>REGISTER
+<br>
+<font size="5">
+<body>
+<form name="form2" action=" " method="get">
+<table border="0"><tr><td  align="right"><font color="blue" size="5">
+FIRST Name:</td><td align="left"><input type="text" size="30" name="fnam" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+LAST Name:</td><td align="left"><input type="text" size="30" name="lnam" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+E-Mail ID:</td><td align="left"><input type="text" size="30" name="mail" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+ADDRESS:</td><td align="left"><input type="text" size="30" name="addr" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+CONTACT NO:</td><td align="left"><input type="text" size="30" name="cnot" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+DOCTOR'S NAME:</td><td align="left"><input type="text" size="30" name="dna" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+DEPARTMENT:</td><td align="left"><input type="text" size="30" name="dept" value=""></td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+Gender:</td><td align="left">
+<input type="radio" name="gender" CHECKED value="male" /> Male      
+<input type="radio" name="gender" value="female" /> Female</td></tr>
+<tr><td  align="right"><font color="blue" size="5">
+</table><br>
+<input type="checkbox" name="tnc" value="yes"> I Accept Terms and Conditions<br>
+<input type="button" value="Submit" onclick="reg(this.form)">
+</form>
+</body>
+</html>
