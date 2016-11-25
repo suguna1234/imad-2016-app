@@ -1,0 +1,35 @@
+
+<html > 
+ 
+<head> 
+<LINK REL="SHORTCUT ICON" HREF="favicon.ico"> 
+  <SCRIPT type="text/javascript" src="jquery.js"></SCRIPT> 
+    <SCRIPT type="text/javascript" src="slideshow.js"></SCRIPT> 
+	<LINK REL="stylesheet" href="styles.css"></link> 
+	
+	<script type="text/javascript"> 
+	
+	   ////define a javascript array that contains your images
+		var slideShow = new Array()
+		slideShow[0] = "recp.jpg";
+		slideShow[1] = "room1.jpg";
+		slideShow[2] = "opt.jpg";
+		slideShow[3] = "opt1.jpg";
+		slideShow[4] = "wait.jpg";
+		slideShow[5] = "ICU.jpg";
+	        slideShow[6] = "cafe.jpg";
+		slideShow[7] = "lab.jpg";
+		slideShow[8] = "lab1.jpg";
+		slideShow[9] = "Xray.jpg";
+		slideShow[10] = "laun.jpg";
+		
+ 
+		function startSlideshow()
+		{
+              processSlideshow("#slideshow", slideShow, 2000, 1000);
+        }
+ 
+       $(document).ready(startSlideshow);
+    </script> 
+</head>
+</html>
